@@ -1,0 +1,129 @@
+body{
+    background-color:  hsl(233, 47%, 7%);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container */
+.container{
+    background-color: hsl(244, 38%, 16%);
+    margin: 100px 200px;
+    text-align: left;
+    width: 1100px;
+    height: 447.5px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+.image{
+    height: 100%;
+    width: 540px;
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+.pic{
+    border-radius: 0 0.6rem 0.6rem 0;
+}
+.card{
+    min-width: 50%;
+}
+.card h1{
+    font-size: 36px;
+    color: white;
+    padding: 50px 40px 7px 70px;
+}
+.card h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.card p{
+    margin-top: 2em;
+    margin-bottom: 4em;
+    margin-right: 3em;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5rem;
+    padding: 0px 40px 0px 70px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0px 0px 300px 0px;
+}
+li span{
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.stats{
+    height: 85px;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+}
+li{
+    margin: 0px 20px 0px 0px;
+    padding: 0px 20px 0px 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1000px){
+    .container{
+        width: 450px;
+        height: 1100px;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 0.6rem 0.6rem 0.6rem 0.6rem;
+    }
+    ul{
+        flex-direction: column;
+        padding: 30px 60px 0px 70px;
+    }
+    li{
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+    .card{
+        margin-top: 157px;
+        margin-bottom: 100px;
+        width: 450px;
+        height: 650px;
+        background-color: hsl(244, 38%, 16%);
+        text-align: center;
+        border-radius: 0rem 0rem 0.6rem 0.6rem;
+    }
+    .card h1{
+        font-size: 28px;
+        padding: 0px 70px 0px 70px;
+    }
+    .card p{
+        margin-top: 3.4em;
+        margin-bottom: 3.4em;
+        margin-right: 0;
+        padding: 0px 70px 0px 70px;
+    }
+    .stats{
+        height: 300px;
+    }
+    .image{
+        width: 450px;
+        height: 300px;
+        border-radius: 0.6rem 0.6rem 0 0;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: 100px;
+    }
+    .pic{
+        width: 450px;
+        border-radius: 0.6rem 0.6rem 0rem 0rem;
+    }
+}
+
